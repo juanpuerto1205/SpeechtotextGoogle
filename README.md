@@ -13,3 +13,8 @@ In order to get started there are a couple of things you need to do.
 6. Export that creds file to your bashrc with: `export GOOGLE_APPLICATION_CREDENTIALS="[PATH]"`
 
 Now you should be able to start up the notebook through [jupyter](https://jupyter.org/) or [colab](https://colab.research.google.com/) and follow it to the end.
+
+
+## Spectrum
+
+I created this pipeline with the goal of using it as a tool to supplement Spectrum with the capability of identifying  multiple speaker dialog in a lecture. For those inside the Penn State network that want to learn more about the tool feel free to visit https://dstoolbox.tlt.psu.edu/
