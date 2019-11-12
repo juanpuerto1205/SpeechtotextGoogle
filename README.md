@@ -12,4 +12,4 @@ In order to get started there are a couple of things you need to do.
 	* You'll get a JSON file with your creds in it
 6. Export that creds file to your bashrc with: `export GOOGLE_APPLICATION_CREDENTIALS="[PATH]"`
 
-Now you should be able to start up jupyter using `jupyter notebook` and run through the entire notebook. 
+Now you should be able to start up the notebook through [jupyter](https://jupyter.org/) or [colab](https://colab.research.google.com/) and follow it to the end.
