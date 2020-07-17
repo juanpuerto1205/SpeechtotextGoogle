@@ -47,14 +47,14 @@ def separate_sentences(master, cols):
     sentences = pd.DataFrame(columns = ['sentence_id'])
 
     sentence_id = 1
-    time = 30
+    time = 30 # Change this if you want to change sentence length
 
     for index, row in master.iterrows():
         
         sentence_data = [sentence_id]
         if row['start'] >= time:
             if row['end_sentence'] == 1:
-                time = row['stop'] + 30
+                time = row['stop'] + time
                 sentence_id = sentence_id + 1
 
         df1 = pd.DataFrame([sentence_data], columns = ['sentence_id'])
