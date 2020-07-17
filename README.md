@@ -4,16 +4,23 @@ Google speech-to-text API provides speaker diarization capabilities alongside th
 
 In order to get started there are a couple of things you need to do.
 
-1. Install Google Cloud's suite of tools in python `pip install --upgrade google-cloud-speech`
-2. Create a new project on GCP
-3. Create a billing account. You need to put payment info so you can use the services
-4. Once you have a billing account, you can __Enable the API you want to use__
-5. Create credentials for that API service. 
+1. Clone this repo
+2. Install Google Cloud's suite of tools in python `pip install --upgrade google-cloud-speech`
+3. Create a new project on GCP
+4. Create a billing account. You need to put payment info so you can use the services
+5. Once you have a billing account, you can __Enable the API you want to use__
+6. Create credentials for that API service. 
 	* You'll get a JSON file with your creds in it
-6. Export that creds file to your bashrc with: `export GOOGLE_APPLICATION_CREDENTIALS="[PATH]"`
+7. Export that creds file to your bashrc with: `export GOOGLE_APPLICATION_CREDENTIALS="[PATH]"`
 
-Now you should be able to start up the notebook through [jupyter](https://jupyter.org/) or [colab](https://colab.research.google.com/) and follow it to the end.
 
+## Usage
+
+There are two ways you can use this: follow it on jupyter notebook or simply run the following on your command line:
+
+```python google-diarization.py -i <input .wav file> ```
+
+This will output a .csv file to the `data/outputs/` directory.
 
 ## Spectrum
 
