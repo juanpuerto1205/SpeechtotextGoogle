@@ -11,24 +11,29 @@ import data_wrangling
         #This could maybe be 2/3 functions that get called by one function
 
 # Defining some variables
-bucket_name = 'audio_analsis' #accidentally mispelled the bucket name lolol
+bucket_name = 'audio_analsis' # You're gonna have to provide your own bucket name
 
 def getArgs(argv):
+    #TODO: Create an optional argument for user to add the bucket name
     #this allows the user to enter some variables, including username and password so that isnt hard coded also returns a usage statement
     input = ''
+    #bucket = 'audio_analsis' 
     
     try:
-        opts, args = getopt.getopt(argv,"hi:",["input="])
+        opts, args = getopt.getopt(argv,"hi:",["input="])#, "bucket="])
     except getopt.GetoptError:
-        print('usage: <path_to_file> -i <input> ')
+        print('usage: <path_to_file> -i <input> -b <bucket name>')
         sys.exit(2)
     
     for opt, arg in opts:
         if opt == '-h':
-            print( 'usage: <path_to_file>  -i <input> ')
+            print( 'usage: <path_to_file>  -i <input> -b <bucket name>')
             sys.exit()
         elif opt in ("-i", "--input"):
             input = arg
+        elif opt in ("-b", "--bucket"):
+            bucket = arg
+
 
     return input
 
